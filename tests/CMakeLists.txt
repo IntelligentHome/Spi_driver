@@ -1,5 +1,5 @@
 
-cmake_minimum_required(VERSION 2.8 FATA_ERROR)
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
 project(Spi_driver_tests)
 
