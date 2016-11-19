@@ -5,6 +5,8 @@ project(Spi_driver_tests)
 
 enable_language(C CXX)
 
+add_definitions(-D__AVR_ATmega8__)
+
 set(GOOGLETEST_ROOT ../../External/googletest/googletest CACHE STRING "Google Test source root")
 
 include_directories(
