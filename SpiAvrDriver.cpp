@@ -16,6 +16,10 @@ SpiAvr::SpiAvr(
     cs_->Set();
 }
 
+uint8_t SpiAvr::Reset(void) {
+    return 0;
+}
+
 void SpiAvr::Send(uint8_t *psend_buff, uint16_t size) {
 
     cs_->Clear();

@@ -20,6 +20,7 @@ public:
     SpiAvr(
         gpio_driver::IGpio *cs);
 
+    virtual uint8_t Reset(void);
     virtual void Send(uint8_t *psend_buff, uint16_t size);
     virtual void Get(uint8_t *precv_buff, uint16_t size);
     virtual void SendAndGet(uint8_t *psend_buff, uint8_t *precv_buff, uint16_t size);
