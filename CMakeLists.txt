@@ -7,8 +7,19 @@ project(Spi_driver)
 include (../External/PlatformDependency.cmake)
 
 set(SOURCES
-    SpiAvrDriver.cpp
+    SpiDriver.cpp
     )
+
+if (${_TARGET_PLATFORM} STREQUAL "AVR")
+
+    set (SOURCES
+        ${SOURCES}
+        SpiAvr.cpp
+        )
+
+elseif (${_TARGET_PLATFORM} STREQUAL "RASPBERRYPI")
+
+endif()
 
 include_directories(
     ../External/include/

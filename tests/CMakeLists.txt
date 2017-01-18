@@ -31,7 +31,7 @@ add_executable(
     Spi_driver_unit_tests
     main.cc
     SpiAvrTests.cc
-    ../SpiAvrDriver.cpp
+    ../SpiAvr.cpp
     )
 
 add_dependencies(Spi_driver_unit_tests googletest)

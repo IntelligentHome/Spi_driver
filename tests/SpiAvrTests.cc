@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "SpiAvrDriver.h"
+#include "SpiAvr.h"
 
 TEST(SpiAvr, SendData) {
 
